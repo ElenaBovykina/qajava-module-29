@@ -1,5 +1,5 @@
 package com.example;
-import org.testng.Assert;
+//import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import static org.testng.Assert.assertEquals;
@@ -32,7 +32,7 @@ public class PersonTest {
                 assertEquals(result, expected, "Возраст младше 13, не должен считаться подростком." );
             } else if (age > 19) {
                 assertEquals(result, expected, "Возраст старше 19, не должен считаться подростком.");
-            } else if (age >=13 && age <= 19) {
+            } else if (age >= 13 && age <= 19) {
                 assertEquals(result, expected, "Возраст с 13 по 19 лет, должен считаться подростком.");
             }
         }
